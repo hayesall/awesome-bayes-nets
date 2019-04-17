@@ -6,7 +6,7 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" /></a>
 </p>
 
-<p align="center">#bayesrocks</p>
+<p align="center"><sub>#bayesrocks</sub></p>
 
 **awesome-bayes-nets** is a curated and structured list of *Books*, *Research
 Papers*, and *Software* for **Bayesian Networks** (BNs).
@@ -32,6 +32,10 @@ Contributions are appreciated, but please read the
 [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) and follow the guidelines provided
 for issues and pull requests.
 
+[Alexander L. Hayes](https://hayesall.com/) currently maintains this list.
+He is notified when new issues or pull requests are submitted, but may not
+always respond immediately. He can also be reached at [`hayesall@iu.edu`](mailto:hayesall@iu.edu).
+
 ---
 
 ## Table of Contents
@@ -39,24 +43,40 @@ for issues and pull requests.
 *Do we need a __New Topic__?* See [here](.github/CONTRIBUTING.md#new-topics).
 
 1. [Papers By Year](#papers-by-year)
-  1. [1997](#1997)
-  1. [1968](#1968)
+    1. [2015](#2015)
+    1. [1998](#1998)
+    1. [1997](#1997)
+    1. [1992](#1992)
+    1. [1968](#1968)
 1. [Papers By Topic](#papers-by-topic)
-  1. [structure-and-parameter-learning](#structure-and-parameter-learning)
-  1. [theory](#theory)
+    1. [structure-and-parameter-learning](#structure-and-parameter-learning)
+    1. [structure-learning](#structure-learning)
+    1. [theory](#theory)
 1. [Resources](#resources)
 1. [Further Reading](#further-reading)
 
 ## Papers by Year
 
 
+#### 2015
+
+1. Lowd, Daniel and Rooshenas, Amirmohammad. (2015). "[The Libra Toolkit for Probabilistic Models](http://www.jmlr.org/papers/volume16/lowd15a/lowd15a.pdf)." The Journal of Machine Learning Research (JMLR). [`2015_lowd.bib`](bib/2015_lowd.bib)
+
+#### 1998
+
+1. Shachter, Ross D.. (1998). "[Bayes-Ball: The Rational Pastime (for Determining Irrelevance and Requisite Information in Belief Networks and Influence Diagrams)](https://arxiv.org/pdf/1301.7412.pdf)." Proceedings of the Fourteenth Conference on Uncertainty in Artificial Intelligence (UAI). [`1998_shachter.bib`](bib/1998_shachter.bib)
+
 #### 1997
 
-1. Friedman, Nir and Geiger, Dan and Goldszmidt, Moises. (1997). "Bayesian Network Classifiers." Machine Learning Journal (MLJ). [`1997_friedman.bib`](bib/1997_friedman.bib)
+1. Friedman, Nir and Geiger, Dan and Goldszmidt, Moises. (1997). "[Bayesian Network Classifiers](https://link.springer.com/content/pdf/10.1023/A:1007465528199.pdf)." Machine Learning Journal (MLJ). [`1997_friedman.bib`](bib/1997_friedman.bib)
+
+#### 1992
+
+1. Cooper, Gregory F and Herskovits, Edward. (1992). "[A Bayesian Method for the Induction of Probabilistic Networks from Data](https://link.springer.com/content/pdf/10.1007/BF00994110.pdf)." Machine Learning Journal (MLJ). [`1992_cooper.bib`](bib/1992_cooper.bib)
 
 #### 1968
 
-1. Chow, C and Liu, Cong. (1968). "Approximating Discrete Probability Distributions with Dependence Trees." IEEE Transactions on Information Theory. [`1968_chow.bib`](bib/1968_chow.bib)
+1. Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability Distributions with Dependence Trees](https://ieeexplore.ieee.org/iel5/18/22639/01054142.pdf)." IEEE Transactions on Information Theory. [`1968_chow.bib`](bib/1968_chow.bib)
 
 
 ## Papers by Topic
@@ -64,11 +84,17 @@ for issues and pull requests.
 
 #### structure-and-parameter-learning
 
-1. Friedman, Nir and Geiger, Dan and Goldszmidt, Moises. (1997). "Bayesian Network Classifiers." Machine Learning Journal (MLJ). [`1997_friedman.bib`](bib/1997_friedman.bib)
+1. Friedman, Nir and Geiger, Dan and Goldszmidt, Moises. (1997). "[Bayesian Network Classifiers](https://link.springer.com/content/pdf/10.1023/A:1007465528199.pdf)." Machine Learning Journal (MLJ). [`1997_friedman.bib`](bib/1997_friedman.bib)
+1. Lowd, Daniel and Rooshenas, Amirmohammad. (2015). "[The Libra Toolkit for Probabilistic Models](http://www.jmlr.org/papers/volume16/lowd15a/lowd15a.pdf)." The Journal of Machine Learning Research (JMLR). [`2015_lowd.bib`](bib/2015_lowd.bib)
+
+#### structure-learning
+
+1. Cooper, Gregory F and Herskovits, Edward. (1992). "[A Bayesian Method for the Induction of Probabilistic Networks from Data](https://link.springer.com/content/pdf/10.1007/BF00994110.pdf)." Machine Learning Journal (MLJ). [`1992_cooper.bib`](bib/1992_cooper.bib)
 
 #### theory
 
-1. Chow, C and Liu, Cong. (1968). "Approximating Discrete Probability Distributions with Dependence Trees." IEEE Transactions on Information Theory. [`1968_chow.bib`](bib/1968_chow.bib)
+1. Shachter, Ross D.. (1998). "[Bayes-Ball: The Rational Pastime (for Determining Irrelevance and Requisite Information in Belief Networks and Influence Diagrams)](https://arxiv.org/pdf/1301.7412.pdf)." Proceedings of the Fourteenth Conference on Uncertainty in Artificial Intelligence (UAI). [`1998_shachter.bib`](bib/1998_shachter.bib)
+1. Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability Distributions with Dependence Trees](https://ieeexplore.ieee.org/iel5/18/22639/01054142.pdf)." IEEE Transactions on Information Theory. [`1968_chow.bib`](bib/1968_chow.bib)
 
 
 ## Resources
