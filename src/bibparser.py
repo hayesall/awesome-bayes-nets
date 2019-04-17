@@ -41,13 +41,24 @@ def build_references():
         with open(os.path.join(BIBDIR, file), "r") as fh:
             _citation = bibtexparser.load(fh)
 
-        _reference = Reference(
-            _citation.entries[0]["author"],
-            _citation.entries[0]["title"],
-            _citation.entries[0]["year"],
-            _citation.entries[0]["journal"],
-            (file, os.path.join(BIBDIR, file)),
-        )
+        if _citation.entries[0].get("url"):
+            _reference = Reference(
+                _citation.entries[0]["author"],
+                _citation.entries[0]["title"],
+                _citation.entries[0]["year"],
+                _citation.entries[0]["journal"],
+                (file, os.path.join(BIBDIR, file)),
+                _citation.entries[0]["url"],
+            )
+        else:
+            _reference = Reference(
+                _citation.entries[0]["author"],
+                _citation.entries[0]["title"],
+                _citation.entries[0]["year"],
+                _citation.entries[0]["journal"],
+                (file, os.path.join(BIBDIR, file)),
+                None,
+            )
 
         _references.append(_reference)
         _reference_years.add(int(_citation.entries[0]["year"]))
@@ -72,8 +83,8 @@ def run():
     def create_toc_papers_by_year(toc_papers_by_year):
         _toc_by_year = ""
         for entry in toc_papers_by_year[:-1]:
-            _toc_by_year += "  1. [{0}](#{0})\n".format(entry)
-        _toc_by_year += "  1. [{0}](#{0})".format(toc_papers_by_year[-1])
+            _toc_by_year += "    1. [{0}](#{0})\n".format(entry)
+        _toc_by_year += "    1. [{0}](#{0})".format(toc_papers_by_year[-1])
         return _toc_by_year
 
     TOC_PAPERS_BY_YEAR = create_toc_papers_by_year(toc_papers_by_year)
@@ -102,8 +113,8 @@ def run():
         _topics = ""
         _topic_keys = list(topics.keys())
         for entry in _topic_keys[:-1]:
-            _topics += "  1. [{0}](#{0})\n".format(entry)
-        _topics += "  1. [{0}](#{0})".format(_topic_keys[-1])
+            _topics += "    1. [{0}](#{0})\n".format(entry)
+        _topics += "    1. [{0}](#{0})".format(_topic_keys[-1])
         return _topics
 
     ###

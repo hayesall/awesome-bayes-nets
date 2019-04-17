@@ -6,7 +6,7 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" /></a>
 </p>
 
-<p align="center">#bayesrocks</p>
+<p align="center"><sub>#bayesrocks</sub></p>
 
 **awesome-bayes-nets** is a curated and structured list of *Books*, *Research
 Papers*, and *Software* for **Bayesian Networks** (BNs).
@@ -31,6 +31,10 @@ We have adopted the [*Contributor Code of Covenant*](.github/CODE_OF_CONDUCT.md)
 Contributions are appreciated, but please read the
 [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) and follow the guidelines provided
 for issues and pull requests.
+
+[Alexander L. Hayes](https://hayesall.com/) currently maintains this list.
+He is notified when new issues or pull requests are submitted, but may not
+always respond immediately. He can also be reached at [`hayesall@iu.edu`](mailto:hayesall@iu.edu).
 
 ---
 
