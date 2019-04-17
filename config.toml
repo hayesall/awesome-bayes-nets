@@ -1,0 +1,4 @@
+[DEFAULT]
+template = static/README.md
+bibtex = bib
+output = README.md
