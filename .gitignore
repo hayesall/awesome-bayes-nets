@@ -1,3 +1,5 @@
+node_modules/*
+
 # The following are based on `Python.gitignore`
 # https://github.com/github/gitignore/blob/7079791ab6058c544dd8dde60294b69e02a6dcf8/Python.gitignore
 
