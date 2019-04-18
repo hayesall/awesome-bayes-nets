@@ -19,17 +19,11 @@ University of Washington. Some inspiration was also drawn from the original
 [Bayesian Network Repository](http://www.cs.huji.ac.il/~galel/Repository/)
 by Gal Elidan and Nir Friedman.
 
-## License and Contributing
-
-**awesome-bayes-nets** is released under a
-[`CC0`](https://creativecommons.org/publicdomain/zero/1.0/): a *Creative Commons
-1.0 Universal (CC0 1.0) Public Domain Dedication.*
-
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)
+## Contributing
 
 We have adopted the [*Contributor Code of Covenant*](.github/CODE_OF_CONDUCT.md).
 Contributions are appreciated, but please read the
-[`CONTRIBUTING.md`](.github/CONTRIBUTING.md) and follow the guidelines provided
+[`CONTRIBUTING.md`](CONTRIBUTING.md) and follow the guidelines provided
 for issues and pull requests.
 
 [Alexander L. Hayes](https://hayesall.com/) currently maintains this list.
@@ -38,16 +32,16 @@ always respond immediately. He can also be reached at [`hayesall@iu.edu`](mailto
 
 ---
 
-## Table of Contents
+## Contents
 
-*Do we need a __New Topic__?* See [here](.github/CONTRIBUTING.md#new-topics).
+*Do we need a New Topic?* See [here](CONTRIBUTING.md#new-topics).
 
-1. [Papers By Year](#papers-by-year)
+1. [Papers by Year](#papers-by-year)
 {{ toc_papers_by_year }}
-1. [Papers By Topic](#papers-by-topic)
+2. [Papers by Topic](#papers-by-topic)
 {{ toc_papers_by_topic }}
-1. [Resources](#resources)
-1. [Further Reading](#further-reading)
+3. [Resources](#resources)
+4. [Further Reading](#further-reading)
 
 ## Papers by Year
 
@@ -61,14 +55,22 @@ always respond immediately. He can also be reached at [`hayesall@iu.edu`](mailto
 
 **Code** (alphabetical)
 
-* **bnlearn** ([Website](http://www.bnlearn.com/)) (Repository): routines for learning and inference in `R`
-* **Libra Toolkit** (Website) (Repository): A collection of algorithms for learning and inference with discrete probabilistic models in `OCaml`.
-* **Pomegranate** ([Website](https://pomegranate.readthedocs.io/en/latest/index.html)) ([Repository](https://github.com/jmschrei/pomegranate)): routines for learning and inference in `Python`.
+- [bnlearn](http://www.bnlearn.com) - routines for learning and inference in `R`.
+- [Libra Toolkit](https://libra.cs.uoregon.edu) - A collection of algorithms for learning and inference with discrete probabilistic models in `OCaml`.
+- [Pomegranate](https://pomegranate.readthedocs.io/en/latest/index.html) - routines for learning and inference in `Python` ([Repository](https://github.com/jmschrei/pomegranate)).
 
 ## Further Reading
 
 *Topics not explicitly covered here, but related:*
 
-* Influence Diagrams
-* Causal Models
-* [Sum-Product Networks / Arithmetic Circuits](https://github.com/arranger1044/awesome-spn)
+- Influence Diagrams
+- Causal Models
+- [Sum-Product Networks / Arithmetic Circuits](https://github.com/arranger1044/awesome-spn)
+
+## License
+
+**awesome-bayes-nets** is released under a
+[`CC0`](https://creativecommons.org/publicdomain/zero/1.0/): a *Creative Commons
+1.0 Universal (CC0 1.0) Public Domain Dedication.*
+
+[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0)

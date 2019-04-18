@@ -83,8 +83,8 @@ def run():
     def create_toc_papers_by_year(toc_papers_by_year):
         _toc_by_year = ""
         for entry in toc_papers_by_year[:-1]:
-            _toc_by_year += "    1. [{0}](#{0})\n".format(entry)
-        _toc_by_year += "    1. [{0}](#{0})".format(toc_papers_by_year[-1])
+            _toc_by_year += "    - [{0}](#{0})\n".format(entry)
+        _toc_by_year += "    - [{0}](#{0})".format(toc_papers_by_year[-1])
         return _toc_by_year
 
     TOC_PAPERS_BY_YEAR = create_toc_papers_by_year(toc_papers_by_year)
@@ -96,13 +96,19 @@ def run():
     def create_papers_by_year_list(papers_by_year):
         _papers_by_year = ""
         _previous_year = 0
+
+        _i = 1
+
         for entry in papers_by_year:
             if entry.year != _previous_year:
-                _papers_by_year += "\n#### {0}\n\n".format(entry.year)
-                _papers_by_year += "1. {0}\n".format(entry)
+                _papers_by_year += "\n### {0}\n\n".format(entry.year)
+                _i = 1
+                _papers_by_year += "{0}. {1}\n".format(_i, entry)
+                _i += 1
                 _previous_year = entry.year
             else:
-                _papers_by_year += "1. {0}\n".format(entry)
+                _papers_by_year += "{0}. {1}\n".format(_i, entry)
+                _i += 1
         return _papers_by_year
 
     PAPERS_BY_YEAR = create_papers_by_year_list(_papers_by_year)
@@ -113,8 +119,8 @@ def run():
         _topics = ""
         _topic_keys = list(topics.keys())
         for entry in _topic_keys[:-1]:
-            _topics += "    1. [{0}](#{0})\n".format(entry)
-        _topics += "    1. [{0}](#{0})".format(_topic_keys[-1])
+            _topics += "    - [{0}](#{0})\n".format(entry)
+        _topics += "    - [{0}](#{0})".format(_topic_keys[-1])
         return _topics
 
     ###
@@ -124,10 +130,13 @@ def run():
     def create_topics_list(topics):
         _topics = ""
         _topic_keys = list(topics.keys())
+
         for key in _topic_keys:
-            _topics += "\n#### {0}\n\n".format(key)
+            _topics += "\n### {0}\n\n".format(key)
+            _i = 1
             for entry in topics[key]:
-                _topics += "1. {0}\n".format(entry)
+                _topics += "{0}. {1}\n".format(_i, entry)
+                _i += 1
         return _topics
 
     ###
