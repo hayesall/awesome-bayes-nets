@@ -1,0 +1,29 @@
+{
+  "name": "awesome-bayes-nets",
+  "version": "0.0.1",
+  "description": "<p align=\"center\">   <h1 align=\"center\"><code>awesome-bayes-nets</code></h1> </p>",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "awesome-lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batflyer/awesome-bayes-nets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batflyer/awesome-bayes-nets/issues"
+  },
+  "homepage": "https://github.com/batflyer/awesome-bayes-nets#readme",
+  "engines": {
+    "node": "11.14.0"
+  },
+  "dependencies": {
+    "awesome-lint": "^0.9.1"
+  }
+}
