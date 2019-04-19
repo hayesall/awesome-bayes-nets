@@ -3,6 +3,8 @@
 
 readme:
 	python -m src
+test:
+	pytest --cov=src src
 style:
 	black src/
 	pycodestyle --max-line-length=100 src/

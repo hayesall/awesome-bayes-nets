@@ -1,0 +1,13 @@
+[run]
+branch = True
+source = src
+include = */src/*
+omit =
+    */setup.py
+
+[report]
+exclude_lines =
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    if _verbose:
+show_missing = True

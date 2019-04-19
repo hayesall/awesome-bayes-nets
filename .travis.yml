@@ -1,0 +1,42 @@
+sudo: false
+
+matrix:
+  include:
+    - name: "Python 3.7 (Xenial Linux)"
+      language: python
+      dist: xenial
+      python: 3.7
+      install:
+        - pip install --user -r src/requirements-develop.txt
+      script: make test
+
+    - name: "Python 3.7 (macOS)"
+      os: osx
+      osx_image: xcode10.2
+      language: shell
+      install:
+        - pip3 install --upgrade pip
+        - pip install --user -r src/requirements-develop.txt
+      script: make test
+
+    - name: "Python 3.7 (Windows)"
+      os: windows
+      language: shell
+      before_install: choco install python
+      env: PATH=/c/Python37:/c/Python37/Scripts:$PATH
+      install:
+        - pip3 install --upgrade pip
+        - pip install --user -r src/requirements-develop.txt
+      script:
+        - python -m pytest --cov=src src
+
+    - name: "Node.js"
+      language: node_js
+      cache: npm
+      script: npm test
+
+after_success:
+  - codecov
+notifications:
+  email:
+    - hayesall@iu.edu
