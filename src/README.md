@@ -1,4 +1,4 @@
-# `src/`
+# `awesome-bib-builder`
 
 This is a small collection of Python scripts which transforms the contents of
 `.bib` files into the structured `README.md` at the base of this repository.
@@ -27,7 +27,7 @@ $ make clean
 $ make
 ```
 
-## Hacking on `src/`
+## Hacking on `awesome-bib-builder`
 
 The contents of this directory determine how papers are listed and formatted.
 Bug reporting or quality-of-life enhancements that make papers easier to
