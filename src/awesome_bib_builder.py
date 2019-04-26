@@ -32,8 +32,9 @@ def run(
 
     _references = []
 
-    for file in os.listdir(bib_directory):
-        _references.append(Reference.load(bib_directory, file))
+    for dir in os.listdir(bib_directory):
+        for file in os.listdir(os.path.join(bib_directory, dir)):
+            _references.append(Reference.load(os.path.join(bib_directory, dir), file))
 
     biblio = Bibliography(_references, verbose=_verbose)
 

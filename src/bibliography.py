@@ -59,17 +59,14 @@ class Bibliography:
         _papers_by_year = self._references_by_year
         _papers_by_year_str = ""
         _previous_year = 0
-        _i = 1
 
         for paper in _papers_by_year:
             if paper.year != _previous_year:
                 _papers_by_year_str += "\n### {0}\n\n".format(paper.year)
-                _i = 1
-                _papers_by_year_str += "{0}. {1}\n".format(_i, paper)
+                _papers_by_year_str += "- {0}\n".format(paper)
                 _previous_year = paper.year
             else:
-                _papers_by_year_str += "{0}. {1}\n".format(_i, paper)
-            _i += 1
+                _papers_by_year_str += "- {0}\n".format(paper)
         return _papers_by_year_str
 
     def create_toc_topics(self):
@@ -99,8 +96,6 @@ class Bibliography:
 
         for key in _topic_keys:
             _topics_str += "\n### {0}\n\n".format(key.lower())
-            _i = 1
             for entry in self._topics[key]:
-                _topics_str += "{0}. {1}\n".format(_i, entry)
-                _i += 1
+                _topics_str += "- {0}\n".format(entry)
         return _topics_str

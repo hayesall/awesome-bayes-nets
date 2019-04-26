@@ -104,9 +104,9 @@ def test_create_papers_by_year_list_1():
 
     _expected = (
         "\n### 2013\n\n"
-        '1. Jean César. (2013). "An amazing title." Nice Journal. '
+        '- Jean César. (2013). "An amazing title." Nice Journal. '
         "[`bibfile`](bibpath/bibfile)\n"
-        '2. Jean César. (2013). "[An amazing title](https://example.com)."'
+        '- Jean César. (2013). "[An amazing title](https://example.com)."'
         " Nice Journal. "
         "[`bibfile`](bibpath/bibfile)\n"
     )
@@ -125,11 +125,11 @@ def test_create_papers_by_year_list_2():
 
     _expected = (
         "\n### 2013\n\n"
-        '1. Jean César. (2013). "[An amazing title](https://example.com)."'
+        '- Jean César. (2013). "[An amazing title](https://example.com)."'
         " Nice Journal. "
         "[`bibfile`](bibpath/bibfile)\n"
         "\n### 1968\n\n"
-        '1. Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability '
+        '- Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability '
         "Distributions with Dependence Trees]"
         '(https://ieeexplore.ieee.org/iel5/18/22639/01054142.pdf)."'
         " IEEE Transactions on Information Theory. [`bibfile`]"
@@ -150,16 +150,16 @@ def test_create_papers_by_year_list_3():
 
     _expected = (
         "\n### 2013\n\n"
-        '1. Jean César. (2013). "[An amazing title](https://example.com)."'
+        '- Jean César. (2013). "[An amazing title](https://example.com)."'
         " Nice Journal. "
         "[`bibfile`](bibpath/bibfile)\n"
         "\n### 1968\n\n"
-        '1. Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability '
+        '- Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability '
         "Distributions with Dependence Trees]"
         '(https://ieeexplore.ieee.org/iel5/18/22639/01054142.pdf)."'
         " IEEE Transactions on Information Theory. [`bibfile`]"
         "(bibpath/bibfile)\n"
-        '2. Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability '
+        '- Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability '
         "Distributions with Dependence Trees]"
         '(https://ieeexplore.ieee.org/iel5/18/22639/01054142.pdf)."'
         " IEEE Transactions on Information Theory. [`bibfile`]"
@@ -180,11 +180,11 @@ def test_create_topics_list():
 
     _expected = (
         "\n### unclassified\n\n"
-        '1. Jean César. (2013). "[An amazing title](https://example.com)."'
+        '- Jean César. (2013). "[An amazing title](https://example.com)."'
         " Nice Journal. "
         "[`bibfile`](bibpath/bibfile)\n"
         "\n### theory\n\n"
-        '1. Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability '
+        '- Chow, C and Liu, Cong. (1968). "[Approximating Discrete Probability '
         "Distributions with Dependence Trees]"
         '(https://ieeexplore.ieee.org/iel5/18/22639/01054142.pdf)."'
         " IEEE Transactions on Information Theory. [`bibfile`]"

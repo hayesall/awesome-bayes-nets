@@ -151,13 +151,13 @@ def test_get_names_2():
 
 
 def test_load_1():
-    ref = Reference.load("bib", "1968_chow.bib")
+    ref = Reference.load("bib/1968", "1968_chow.bib")
     _names = ref.get_names()
     assert _names == ["Chow, C", "Liu, Cong"]
 
 
 def test_load_2():
-    ref = Reference.load("bib", "1968_chow.bib")
+    ref = Reference.load("bib/1968", "1968_chow.bib")
     assert ref.author == "Chow, C and Liu, Cong"
     _expected = (
         "Approximating Discrete Probability " "Distributions with Dependence Trees"
@@ -167,7 +167,7 @@ def test_load_2():
     assert ref.journal == "IEEE Transactions on Information Theory"
     assert ref.url == "https://ieeexplore.ieee.org/iel5/18/22639/01054142.pdf"
     assert ref.note == "theory"
-    assert ref.file_location[0] == "bib"
+    assert ref.file_location[0] == "bib/1968"
     assert ref.file_location[1] == "1968_chow.bib"
 
 
