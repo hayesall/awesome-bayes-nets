@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>awesome-bayes-nets</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+width: 1400px;
+max-width: 99%;
+box-sizing: border-box;
+padding: 30px 30px 8rem 30px;
+margin-left: auto;
+margin-right: auto;
+}
+body a {
+background-color: transparent;
+}
+body a:active,
+body a:hover {
+outline: 0;
+}
+body strong {
+font-weight: bold;
+}
+body h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+body img {
+border: 0;
+}
+body hr {
+box-sizing: content-box;
+height: 0;
+}
+body pre {
+overflow: auto;
+}
+body code,
+body kbd,
+body pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+body input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+body html input[disabled] {
+cursor: default;
+}
+body input {
+line-height: normal;
+}
+body input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+body table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+body td,
+body th {
+padding: 0;
+}
+body * {
+box-sizing: border-box;
+}
+body input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body a {
+color: #4078c0;
+text-decoration: none;
+}
+body a:hover,
+body a:active {
+text-decoration: underline;
+}
+body hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+body hr:before {
+display: table;
+content: "";
+}
+body hr:after {
+display: table;
+clear: both;
+content: "";
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+body h1 {
+font-size: 30px;
+}
+body h2 {
+font-size: 21px;
+}
+body h3 {
+font-size: 16px;
+}
+body h4 {
+font-size: 14px;
+}
+body h5 {
+font-size: 12px;
+}
+body h6 {
+font-size: 11px;
+}
+body blockquote {
+margin: 0;
+}
+body ul,
+body ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+body ol ol,
+body ul ol {
+list-style-type: lower-roman;
+}
+body ul ul ol,
+body ul ol ol,
+body ol ul ol,
+body ol ol ol {
+list-style-type: lower-alpha;
+}
+body dd {
+margin-left: 0;
+}
+body code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+body pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+body .select::-ms-expand {
+opacity: 0;
+}
+body .octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+body .octicon-link:before {
+content: '\f05c';
+}
+body:before {
+display: table;
+content: "";
+}
+body:after {
+display: table;
+clear: both;
+content: "";
+}
+body>*:first-child {
+margin-top: 0 !important;
+}
+body>*:last-child {
+margin-bottom: 0 !important;
+}
+body a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+body .anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+body .anchor:focus {
+outline: none;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+body h1 .octicon-link,
+body h2 .octicon-link,
+body h3 .octicon-link,
+body h4 .octicon-link,
+body h5 .octicon-link,
+body h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+body h1:hover .anchor,
+body h2:hover .anchor,
+body h3:hover .anchor,
+body h4:hover .anchor,
+body h5:hover .anchor,
+body h6:hover .anchor {
+text-decoration: none;
+}
+body h1:hover .anchor .octicon-link,
+body h2:hover .anchor .octicon-link,
+body h3:hover .anchor .octicon-link,
+body h4:hover .anchor .octicon-link,
+body h5:hover .anchor .octicon-link,
+body h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+body h1 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.2;
+}
+body h1 .anchor {
+line-height: 1;
+}
+body h2 {
+padding-bottom: 0.3em;
+font-size: 1.5em;
+line-height: 1.225;
+}
+body h2 .anchor {
+line-height: 1;
+}
+body h3 {
+font-size: 1.25em;
+line-height: 1.43;
+}
+body h3 .anchor {
+line-height: 1.2;
+}
+body h4 {
+font-size: 1em;
+}
+body h4 .anchor {
+line-height: 1.2;
+}
+body h5 {
+font-size: 1em;
+}
+body h5 .anchor {
+line-height: 1.1;
+}
+body h6 {
+font-size: 1em;
+color: #777;
+}
+body h6 .anchor {
+line-height: 1.1;
+}
+body p,
+body blockquote,
+body ul,
+body ol,
+body dl,
+body table,
+body pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+body hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+body ul,
+body ol {
+padding-left: 2em;
+}
+body ul ul,
+body ul ol,
+body ol ol,
+body ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+body li>p {
+margin-top: 16px;
+}
+body dl {
+padding: 0;
+}
+body dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+body dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+body blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+body blockquote>:first-child {
+margin-top: 0;
+}
+body blockquote>:last-child {
+margin-bottom: 0;
+}
+body table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+body table th {
+font-weight: bold;
+}
+body table th,
+body table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+body table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+body table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+body img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+body code {
+padding: 0;
+padding-top: 0;
+padding-bottom: 0;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+body code:before,
+body code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+body pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+body .highlight {
+margin-bottom: 16px;
+}
+body .highlight pre,
+body pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+body .highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+body pre {
+word-wrap: normal;
+}
+body pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+body pre code:before,
+body pre code:after {
+content: normal;
+}
+body kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+body .pl-c {
+color: #969896;
+}
+body .pl-c1,
+body .pl-s .pl-v {
+color: #0086b3;
+}
+body .pl-e,
+body .pl-en {
+color: #795da3;
+}
+body .pl-s .pl-s1,
+body .pl-smi {
+color: #333;
+}
+body .pl-ent {
+color: #63a35c;
+}
+body .pl-k {
+color: #a71d5d;
+}
+body .pl-pds,
+body .pl-s,
+body .pl-s .pl-pse .pl-s1,
+body .pl-sr,
+body .pl-sr .pl-cce,
+body .pl-sr .pl-sra,
+body .pl-sr .pl-sre {
+color: #183691;
+}
+body .pl-v {
+color: #ed6a43;
+}
+body .pl-id {
+color: #b52a1d;
+}
+body .pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+body .pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+body .pl-ml {
+color: #693a17;
+}
+body .pl-mh,
+body .pl-mh .pl-en,
+body .pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+body .pl-mq {
+color: #008080;
+}
+body .pl-mi {
+color: #333;
+font-style: italic;
+}
+body .pl-mb {
+color: #333;
+font-weight: bold;
+}
+body .pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+body .pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+body .pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+body .pl-mo {
+color: #1d3e81;
+}
+body kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+body .task-list-item {
+list-style-type: none;
+}
+body .task-list-item+.task-list-item {
+margin-top: 3px;
+}
+body .task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+body :checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p align="center">
+<h1 align="center">
+<code>awesome-bayes-nets</code>
+</h1>
+</p>
+<p align="center">
+<a href="https://awesome.re"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMTAgMjAiPjwhLS0gQ3JlYXRlZCBieSBTaW5kcmUgU29yaHVzIC0tPjxkZWZzPjxmaWx0ZXIgaWQ9ImEiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjExMSIgaGVpZ2h0PSIyMCI+PGZlQ29sb3JNYXRyaXggdmFsdWVzPSIxIDAgMCAwIDAgMCAxIDAgMCAwIDAgMCAxIDAgMCAwIDAgMCAxIDAiLz48L2ZpbHRlcj48L2RlZnM+PG1hc2sgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjExMSIgaGVpZ2h0PSIyMCIgaWQ9ImIiPjxwYXRoIGZpbGw9IiNGRkYiIGZpbHRlcj0idXJsKCNhKSIgZD0iTTMgMGgxMDRjMS42NiAwIDMgMS4zNCAzIDN2MTRjMCAxLjY2LTEuMzQgMy0zIDNIM2MtMS42NiAwLTMtMS4zNC0zLTNWM2MwLTEuNjYgMS4zNC0zIDMtM3oiLz48L21hc2s+PGcgbWFzaz0idXJsKCNiKSI+PHBhdGggZmlsbD0iI0NDQTZDNCIgZD0iTTAgMGgzNHYyMEgwVjB6Ii8+PHBhdGggZmlsbD0iIzQ5NDM2OCIgZD0iTTM0IDBoNzd2MjBIMzRWMHoiLz48bGluZWFyR3JhZGllbnQgaWQ9ImMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iLTI2MS4xMjIiIHkxPSIyMzkuNTUiIHgyPSItMjYxLjEyMiIgeTI9IjIzOC41NSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxMTEgMCAwIC0yMCAyOTA0MCA0NzkxKSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjQkJCIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2MpIiBkPSJNMCAwaDExMXYyMEgwVjB6Ii8+PC9nPjxwYXRoIGQ9Ik00Ni45NyA3LjYyYy40MiAwIC43NS4xMyAxLjA1LjQuMjguMjcuNDMuNTkuNDMuOTh2NC43OWgtNS4yNGMtLjQyIDAtLjc3LS4xMy0xLjA1LS40cy0uNDMtLjU5LS40My0uOTh2LTIuMjdoNS41VjguOTljMC0uMDctLjAzLS4xMi0uMDgtLjE2LS4wNS0uMDQtLjExLS4wNy0uMTctLjA3aC01LjI0VjcuNjJoNS4yM3ptLjI2IDUuMDJ2LTEuMzZoLTQuMjZ2MS4xM2MwIC4wNy4wMy4xMi4wOC4xNnMuMTEuMDcuMTcuMDdoNC4wMXptMTEuODYtNS4wMmgxLjNsLTIuNDkgNi4xN2gtMUw1NC42OCA5LjJsLTIuMSA0LjU5LS4wMy0uMDEuMDEuMDFoLTFsLTIuNi02LjE3aDEuM2wxLjc5IDQuMDkgMS45MS00LjA5aDEuNGwyLjAyIDQuMDkgMS43MS00LjA5em02Ljk1IDBjLjQyIDAgLjc3LjEzIDEuMDUuNHMuNDMuNTkuNDMuOTh2Mi4yN2gtNS41djEuMTNjMCAuMDcuMDMuMTIuMDguMTYuMDUuMDQuMTEuMDcuMTcuMDdoNS4yNHYxLjE0aC01LjI0Yy0uNDIgMC0uNzctLjEzLTEuMDUtLjRzLS40My0uNTktLjQzLS45OHYtMy40YzAtLjM4LjE1LS43MS40My0uOThzLjYzLS40IDEuMDUtLjRoMy43N3YuMDF6bS00LjAxIDIuNWg0LjI2VjguOTljMC0uMDctLjAzLS4xMi0uMDgtLjE2cy0uMTEtLjA3LS4xNy0uMDdoLTMuNzdjLS4wNyAwLS4xMi4wMy0uMTcuMDdzLS4wOC4xMS0uMDguMTZ2MS4xM2guMDF6bTEzLjM1LTEuMTN2LjIzaC0xLjIydi0uMjNjMC0uMDctLjAzLS4xMi0uMDgtLjE2cy0uMTEtLjA3LS4xNy0uMDdoLTMuNzdjLS4wNyAwLS4xMi4wMy0uMTcuMDdzLS4wOC4xMS0uMDguMTZ2LjljMCAuMDcuMDMuMTIuMDguMTYuMDUuMDQuMTEuMDcuMTcuMDdoMy43N2MuNDIgMCAuNzUuMTMgMS4wNS40LjI4LjI3LjQzLjU5LjQzLjk4di44OWMwIC4zOC0uMTUuNzEtLjQzLjk4cy0uNjMuNC0xLjA1LjRoLTMuNzdjLS40MiAwLS43Ny0uMTMtMS4wNS0uNHMtLjQzLS41OS0uNDMtLjk4di0uMjNoMS4yNHYuMjNjMCAuMDcuMDMuMTIuMDguMTYuMDUuMDQuMTEuMDcuMTcuMDdoMy43N2MuMDcgMCAuMTItLjAzLjE3LS4wNy4wNS0uMDQuMDgtLjExLjA4LS4xNnYtLjg5YzAtLjA3LS4wMy0uMTItLjA4LS4xNi0uMDUtLjA0LS4xMS0uMDctLjE3LS4wN2gtMy43N2MtLjQyIDAtLjc3LS4xMy0xLjA1LS40cy0uNDMtLjU5LS40My0uOTh2LS45YzAtLjM4LjE1LS43MS40My0uOThzLjYzLS40IDEuMDUtLjRoMy43N2MuNDIgMCAuNzUuMTMgMS4wNS40LjI3LjI4LjQxLjYxLjQxLjk4em0yLjYtMS4zN2gzLjc3Yy40MiAwIC43Ny4xMyAxLjA1LjRzLjQzLjU5LjQzLjk4djMuNGMwIC4zOC0uMTUuNzEtLjQzLjk4cy0uNjMuNC0xLjA1LjRoLTMuNzdjLS40MiAwLS43Ny0uMTMtMS4wNS0uNHMtLjQzLS41OS0uNDMtLjk4VjguOTljMC0uMzguMTUtLjcxLjQzLS45OC4zLS4yNi42NS0uMzkgMS4wNS0uMzl6bTMuNzcgMS4xNGgtMy43N2MtLjA3IDAtLjEyLjAzLS4xNy4wN3MtLjA4LjExLS4wOC4xNnYzLjRjMCAuMDcuMDMuMTIuMDguMTZzLjExLjA3LjE3LjA3aDMuNzdjLjA3IDAgLjEyLS4wMy4xNy0uMDdzLjA4LS4xMS4wOC0uMTZ2LTMuNGMwLS4wNy0uMDMtLjEyLS4wOC0uMTYtLjA0LS4wNC0uMS0uMDctLjE3LS4wN3ptMTEuMTItMS4xNGMuNDIgMCAuNzUuMTMgMS4wNS40LjI4LjI3LjQzLjU5LjQzLjk4djQuNzloLTEuMjJ2LTQuOGMwLS4wNy0uMDMtLjEyLS4wOC0uMTZzLS4xMS0uMDctLjE5LS4wN2gtMi42MWMtLjA3IDAtLjEyLjAzLS4xNy4wN3MtLjA4LjExLS4wOC4xNnY0Ljc5aC0xLjI0VjguOTljMC0uMDctLjAzLS4xMi0uMDgtLjE2cy0uMTEtLjA3LS4xNy0uMDdoLTIuNjJjLS4wNyAwLS4xMi4wMy0uMTcuMDctLjA1LjA0LS4wOC4xMS0uMDguMTZ2NC43OUg4NC40VjcuNjJoOC40N3ptNy45MiAwYy40MiAwIC43Ny4xMyAxLjA1LjRzLjQzLjU5LjQzLjk4djIuMjdoLTUuNXYxLjEzYzAgLjA3LjAzLjEyLjA4LjE2LjA1LjA0LjExLjA3LjE3LjA3aDUuMjR2MS4xNGgtNS4yNGMtLjQyIDAtLjc3LS4xMy0xLjA1LS40cy0uNDMtLjU5LS40My0uOTh2LTMuNGMwLS4zOC4xNS0uNzEuNDMtLjk4cy42My0uNCAxLjA1LS40aDMuNzd2LjAxem0tNC4wMiAyLjVoNC4yNlY4Ljk5YzAtLjA3LS4wMy0uMTItLjA4LS4xNnMtLjExLS4wNy0uMTctLjA3aC0zLjc3Yy0uMDcgMC0uMTIuMDMtLjE3LjA3cy0uMDguMTEtLjA4LjE2djEuMTNoLjAxeiIvPjxwYXRoIGQ9Ik00Ni45NyA2LjkyYy40MiAwIC43NS4xMyAxLjA1LjQuMjguMjcuNDMuNTkuNDMuOTh2NC43OWgtNS4yNGMtLjQyIDAtLjc3LS4xMy0xLjA1LS40cy0uNDMtLjU5LS40My0uOThWOS40NGg1LjVWOC4yOWMwLS4wNy0uMDMtLjEyLS4wOC0uMTYtLjA1LS4wNC0uMTEtLjA3LS4xNy0uMDdoLTUuMjRWNi45Mmg1LjIzem0uMjYgNS4wMnYtMS4zNmgtNC4yNnYxLjEzYzAgLjA3LjAzLjEyLjA4LjE2cy4xMS4wNy4xNy4wN2g0LjAxem0xMS44Ni01LjAyaDEuM2wtMi40OSA2LjE3aC0xTDU0LjY4IDguNWwtMi4xIDQuNTktLjAzLS4wMS4wMS4wMWgtMWwtMi42LTYuMTdoMS4zbDEuNzkgNC4wOSAxLjkxLTQuMDloMS40bDIuMDIgNC4wOSAxLjcxLTQuMDl6bTYuOTUgMGMuNDIgMCAuNzcuMTMgMS4wNS40cy40My41OS40My45OHYyLjI3aC01LjV2MS4xM2MwIC4wNy4wMy4xMi4wOC4xNi4wNS4wNC4xMS4wNy4xNy4wN2g1LjI0djEuMTRoLTUuMjRjLS40MiAwLS43Ny0uMTMtMS4wNS0uNHMtLjQzLS41OS0uNDMtLjk4di0zLjRjMC0uMzguMTUtLjcxLjQzLS45OHMuNjMtLjQgMS4wNS0uNGgzLjc3di4wMXptLTQuMDEgMi41aDQuMjZWOC4yOWMwLS4wNy0uMDMtLjEyLS4wOC0uMTYtLjA1LS4wNC0uMTEtLjA3LS4xNy0uMDdoLTMuNzdjLS4wNyAwLS4xMi4wMy0uMTcuMDctLjA1LjA0LS4wOC4xMS0uMDguMTZ2MS4xM2guMDF6bTEzLjM1LTEuMTN2LjIzaC0xLjIydi0uMjNjMC0uMDctLjAzLS4xMi0uMDgtLjE2LS4wNS0uMDQtLjExLS4wNy0uMTctLjA3aC0zLjc3Yy0uMDcgMC0uMTIuMDMtLjE3LjA3LS4wNS4wNC0uMDguMTEtLjA4LjE2di45YzAgLjA3LjAzLjEyLjA4LjE2cy4xMS4wNy4xNy4wN2gzLjc3Yy40MiAwIC43NS4xMyAxLjA1LjQuMjguMjcuNDMuNTkuNDMuOTh2Ljg5YzAgLjM4LS4xNS43MS0uNDMuOThzLS42My40LTEuMDUuNGgtMy43N2MtLjQyIDAtLjc3LS4xMy0xLjA1LS40cy0uNDMtLjU5LS40My0uOTh2LS4yM2gxLjI0di4yM2MwIC4wNy4wMy4xMi4wOC4xNi4wNS4wNC4xMS4wNy4xNy4wN2gzLjc3Yy4wNyAwIC4xMi0uMDMuMTctLjA3LjA1LS4wNC4wOC0uMTEuMDgtLjE2di0uODljMC0uMDctLjAzLS4xMi0uMDgtLjE2LS4wNS0uMDQtLjExLS4wNy0uMTctLjA3aC0zLjc3Yy0uNDIgMC0uNzctLjEzLTEuMDUtLjRzLS40My0uNTktLjQzLS45OHYtLjljMC0uMzguMTUtLjcxLjQzLS45OHMuNjMtLjQgMS4wNS0uNGgzLjc3Yy40MiAwIC43NS4xMyAxLjA1LjQuMjcuMjguNDEuNjEuNDEuOTh6bTIuNi0xLjM3aDMuNzdjLjQyIDAgLjc3LjEzIDEuMDUuNHMuNDMuNTkuNDMuOTh2My40YzAgLjM4LS4xNS43MS0uNDMuOThzLS42My40LTEuMDUuNGgtMy43N2MtLjQyIDAtLjc3LS4xMy0xLjA1LS40cy0uNDMtLjU5LS40My0uOThWOC4yOWMwLS4zOC4xNS0uNzEuNDMtLjk4LjMtLjI2LjY1LS4zOSAxLjA1LS4zOXptMy43NyAxLjE0aC0zLjc3Yy0uMDcgMC0uMTIuMDMtLjE3LjA3LS4wNS4wNC0uMDguMTEtLjA4LjE2djMuNGMwIC4wNy4wMy4xMi4wOC4xNnMuMTEuMDcuMTcuMDdoMy43N2MuMDcgMCAuMTItLjAzLjE3LS4wN3MuMDgtLjExLjA4LS4xNnYtMy40YzAtLjA3LS4wMy0uMTItLjA4LS4xNi0uMDQtLjA0LS4xLS4wNy0uMTctLjA3em0xMS4xMi0xLjE0Yy40MiAwIC43NS4xMyAxLjA1LjQuMjguMjcuNDMuNTkuNDMuOTh2NC43OWgtMS4yMnYtNC44YzAtLjA3LS4wMy0uMTItLjA4LS4xNi0uMDUtLjA0LS4xMS0uMDctLjE5LS4wN2gtMi42MWMtLjA3IDAtLjEyLjAzLS4xNy4wNy0uMDUuMDQtLjA4LjExLS4wOC4xNnY0Ljc5aC0xLjI0VjguMjljMC0uMDctLjAzLS4xMi0uMDgtLjE2LS4wNS0uMDQtLjExLS4wNy0uMTctLjA3aC0yLjYyYy0uMDcgMC0uMTIuMDMtLjE3LjA3LS4wNS4wNC0uMDguMTEtLjA4LjE2djQuNzlIODQuNFY2LjkyaDguNDd6bTcuOTIgMGMuNDIgMCAuNzcuMTMgMS4wNS40cy40My41OS40My45OHYyLjI3aC01LjV2MS4xM2MwIC4wNy4wMy4xMi4wOC4xNi4wNS4wNC4xMS4wNy4xNy4wN2g1LjI0djEuMTRoLTUuMjRjLS40MiAwLS43Ny0uMTMtMS4wNS0uNHMtLjQzLS41OS0uNDMtLjk4di0zLjRjMC0uMzguMTUtLjcxLjQzLS45OHMuNjMtLjQgMS4wNS0uNGgzLjc3di4wMXptLTQuMDIgMi41aDQuMjZWOC4yOWMwLS4wNy0uMDMtLjEyLS4wOC0uMTYtLjA1LS4wNC0uMTEtLjA3LS4xNy0uMDdoLTMuNzdjLS4wNyAwLS4xMi4wMy0uMTcuMDctLjA1LjA0LS4wOC4xMS0uMDguMTZ2MS4xM2guMDF6IiBmaWxsPSIjRkZGIi8+PHBhdGggZmlsbD0iI0REQTRDQSIgZD0iTTI2LjU3IDkuNzZsLTQuOTEtNC41LS42OS43NSA0LjA5IDMuNzVIOC45NGw0LjA5LTMuNzUtLjY5LS43NS00LjkxIDQuNXYyLjk3YzAgMS4zNCAxLjI5IDIuNDMgMi44OCAyLjQzaDMuMDNjMS41OSAwIDIuODgtMS4wOSAyLjg4LTIuNDN2LTEuOTVoMS41N3YxLjk1YzAgMS4zNCAxLjI5IDIuNDMgMi44OCAyLjQzaDMuMDNjMS41OSAwIDIuODgtMS4wOSAyLjg4LTIuNDNsLS4wMS0yLjk3eiIvPjxwYXRoIGZpbGw9IiMyNjExMjAiIGQ9Ik0yNi41NyA5LjM0bC00LjkxLTQuNS0uNjkuNzUgNC4wOSAzLjc1SDguOTRsNC4wOS0zLjc1LS42OS0uNzUtNC45MSA0LjV2Mi45N2MwIDEuMzQgMS4yOSAyLjQzIDIuODggMi40M2gzLjAzYzEuNTkgMCAyLjg4LTEuMDkgMi44OC0yLjQzdi0xLjk1aDEuNTd2MS45NWMwIDEuMzQgMS4yOSAyLjQzIDIuODggMi40M2gzLjAzYzEuNTkgMCAyLjg4LTEuMDkgMi44OC0yLjQzbC0uMDEtMi45N3oiLz48L3N2Zz4K" /></a>
+</p>
+<p align="center">
+<sub>#bayesrocks</sub>
+</p>
+<p><strong>awesome-bayes-nets</strong> is a curated and structured list of <em>Books</em>, <em>Research Papers</em>, and <em>Software</em> for <strong>Bayesian Networks</strong> (BNs).</p>
+<p>Papers are sorted by year and topics. This was inspired (and modeled on) Antonio Vergari’s <a href="https://github.com/arranger1044/awesome-spn"><code>awesome-spn</code></a> repository, which in turn was inspired by the <a href="http://spn.cs.washington.edu/">SPN page</a> at the University of Washington. Some inspiration was also drawn from the original <a href="http://www.cs.huji.ac.il/~galel/Repository/">Bayesian Network Repository</a> by Gal Elidan and Nir Friedman.</p>
+<h2 id="contributing">Contributing</h2>
+<p>We have adopted the <a href=".github/CODE_OF_CONDUCT.md"><em>Contributor Code of Covenant</em></a>. Contributions are appreciated, but please read the <a href="CONTRIBUTING.md"><code>CONTRIBUTING.md</code></a> and follow the guidelines provided for issues and pull requests.</p>
+<p><a href="https://hayesall.com/">Alexander L. Hayes</a> currently maintains this list. He is notified when new <a href="https://github.com/batflyer/awesome-bayes-nets/issues">issues</a> or <a href="https://github.com/batflyer/awesome-bayes-nets/pulls">pull requests</a> are submitted, but may not always respond immediately. He can also be reached at <a href="mailto:hayesall@iu.edu"><code>hayesall@iu.edu</code></a>.</p>
+<hr />
+<h2 id="contents">Contents</h2>
+<p><em>Do we need a New Topic?</em> See <a href="CONTRIBUTING.md#new-topics">here</a>.</p>
+<ol type="1">
+<li><a href="#papers-by-year">Papers by Year</a>
+<ul>
+<li><a href="#2015">2015</a></li>
+<li><a href="#2002">2002</a></li>
+<li><a href="#2000">2000</a></li>
+<li><a href="#1998">1998</a></li>
+<li><a href="#1997">1997</a></li>
+<li><a href="#1996">1996</a></li>
+<li><a href="#1994">1994</a></li>
+<li><a href="#1993">1993</a></li>
+<li><a href="#1992">1992</a></li>
+<li><a href="#1968">1968</a></li>
+</ul></li>
+<li><a href="#papers-by-topic">Papers by Topic</a>
+<ul>
+<li><a href="#structure-and-parameter-learning">structure-and-parameter-learning</a></li>
+<li><a href="#structure-learning">structure-learning</a></li>
+<li><a href="#theory">theory</a></li>
+</ul></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#further-reading">Further Reading</a></li>
+</ol>
+<h2 id="papers-by-year">Papers by Year</h2>
+<h3 id="section">2015</h3>
+<ul>
+<li>Lowd, Daniel and Rooshenas, Amirmohammad. (2015). “<a href="http://www.jmlr.org/papers/volume16/lowd15a/lowd15a.pdf">The Libra Toolkit for Probabilistic Models</a>.” The Journal of Machine Learning Research (JMLR). <a href="bib/2015/2015_lowd.bib"><code>2015_lowd.bib</code></a></li>
+</ul>
+<h3 id="section-1">2002</h3>
+<ul>
+<li>Lerner, Uri N. (2002). “<a href="https://pdfs.semanticscholar.org/5609/16ef9bf3dffee6bd74192b5987870a66fad7.pdf">Hybrid Bayesian Networks for Reasoning about Complex Systems</a>.” Ph.D. Thesis. <a href="bib/2002/2002_lerner.bib"><code>2002_lerner.bib</code></a></li>
+</ul>
+<h3 id="section-2">2000</h3>
+<ul>
+<li>Tian, Jin. (2000). “<a href="https://pdfs.semanticscholar.org/bf7e/6d7bc896bafdaef0b195b762b164e14b5ee9.pdf">A Branch-and-Bound Algorithm for MDL Learning Bayesian Networks</a>.” Proceedings of the Sixteenth Conference on Uncertainty in Artificial Intelligence (UAI). <a href="bib/2000/2000_tian.bib"><code>2000_tian.bib</code></a></li>
+</ul>
+<h3 id="section-3">1998</h3>
+<ul>
+<li>Shachter, Ross D.. (1998). “<a href="https://arxiv.org/pdf/1301.7412.pdf">Bayes-Ball: The Rational Pastime (for Determining Irrelevance and Requisite Information in Belief Networks and Influence Diagrams)</a>.” Proceedings of the Fourteenth Conference on Uncertainty in Artificial Intelligence (UAI). <a href="bib/1998/1998_shachter.bib"><code>1998_shachter.bib</code></a></li>
+</ul>
+<h3 id="section-4">1997</h3>
+<ul>
+<li>Friedman, Nir and Geiger, Dan and Goldszmidt, Moises. (1997). “<a href="https://link.springer.com/content/pdf/10.1023/A:1007465528199.pdf">Bayesian Network Classifiers</a>.” Machine Learning Journal (MLJ). <a href="bib/1997/1997_friedman.bib"><code>1997_friedman.bib</code></a></li>
+</ul>
+<h3 id="section-5">1996</h3>
+<ul>
+<li>Chickering, David Maxwell. (1996). “<a href="http://people.cs.pitt.edu/~milos/courses/cs3710/readings/chickering96learning.pdf">Learning Bayesian Networks is NP-Complete</a>.” Learning from Data: Artificial Intelligence and Statistics V. <a href="bib/1996/1996_chickering.bib"><code>1996_chickering.bib</code></a></li>
+</ul>
+<h3 id="section-6">1994</h3>
+<ul>
+<li>Lam, Wai and Bacchus, Fahiem. (1994). “<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-8640.1994.tb00166.x">Learning Bayesian Belief Networks: An Approach Based on the MDL Principle</a>.” Computational Intelligence. <a href="bib/1994/1994_lam.bib"><code>1994_lam.bib</code></a></li>
+</ul>
+<h3 id="section-7">1993</h3>
+<ul>
+<li>Bouckaert, Remco R. (1993). “<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.19.371&amp;rep=rep1&amp;type=pdf">Probabilistic Network Construction Using the Minimum Description Length Principle</a>.” European Conference on Symbolic and Quantitative Approaches to Reasoning and Uncertainty. <a href="bib/1993/1993_bouckaert.bib"><code>1993_bouckaert.bib</code></a></li>
+</ul>
+<h3 id="section-8">1992</h3>
+<ul>
+<li>Cooper, Gregory F and Herskovits, Edward. (1992). “<a href="https://link.springer.com/content/pdf/10.1007/BF00994110.pdf">A Bayesian Method for the Induction of Probabilistic Networks from Data</a>.” Machine Learning Journal (MLJ). <a href="bib/1992/1992_cooper.bib"><code>1992_cooper.bib</code></a></li>
+</ul>
+<h3 id="section-9">1968</h3>
+<ul>
+<li>Chow, C and Liu, Cong. (1968). “<a href="https://ieeexplore.ieee.org/iel5/18/22639/01054142.pdf">Approximating Discrete Probability Distributions with Dependence Trees</a>.” IEEE Transactions on Information Theory. <a href="bib/1968/1968_chow.bib"><code>1968_chow.bib</code></a></li>
+</ul>
+<h2 id="papers-by-topic">Papers by Topic</h2>
+<h3 id="structure-and-parameter-learning">structure-and-parameter-learning</h3>
+<ul>
+<li>Lowd, Daniel and Rooshenas, Amirmohammad. (2015). “<a href="http://www.jmlr.org/papers/volume16/lowd15a/lowd15a.pdf">The Libra Toolkit for Probabilistic Models</a>.” The Journal of Machine Learning Research (JMLR). <a href="bib/2015/2015_lowd.bib"><code>2015_lowd.bib</code></a></li>
+<li>Friedman, Nir and Geiger, Dan and Goldszmidt, Moises. (1997). “<a href="https://link.springer.com/content/pdf/10.1023/A:1007465528199.pdf">Bayesian Network Classifiers</a>.” Machine Learning Journal (MLJ). <a href="bib/1997/1997_friedman.bib"><code>1997_friedman.bib</code></a></li>
+</ul>
+<h3 id="structure-learning">structure-learning</h3>
+<ul>
+<li>Bouckaert, Remco R. (1993). “<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.19.371&amp;rep=rep1&amp;type=pdf">Probabilistic Network Construction Using the Minimum Description Length Principle</a>.” European Conference on Symbolic and Quantitative Approaches to Reasoning and Uncertainty. <a href="bib/1993/1993_bouckaert.bib"><code>1993_bouckaert.bib</code></a></li>
+<li>Lam, Wai and Bacchus, Fahiem. (1994). “<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-8640.1994.tb00166.x">Learning Bayesian Belief Networks: An Approach Based on the MDL Principle</a>.” Computational Intelligence. <a href="bib/1994/1994_lam.bib"><code>1994_lam.bib</code></a></li>
+<li>Cooper, Gregory F and Herskovits, Edward. (1992). “<a href="https://link.springer.com/content/pdf/10.1007/BF00994110.pdf">A Bayesian Method for the Induction of Probabilistic Networks from Data</a>.” Machine Learning Journal (MLJ). <a href="bib/1992/1992_cooper.bib"><code>1992_cooper.bib</code></a></li>
+<li>Tian, Jin. (2000). “<a href="https://pdfs.semanticscholar.org/bf7e/6d7bc896bafdaef0b195b762b164e14b5ee9.pdf">A Branch-and-Bound Algorithm for MDL Learning Bayesian Networks</a>.” Proceedings of the Sixteenth Conference on Uncertainty in Artificial Intelligence (UAI). <a href="bib/2000/2000_tian.bib"><code>2000_tian.bib</code></a></li>
+</ul>
+<h3 id="theory">theory</h3>
+<ul>
+<li>Chow, C and Liu, Cong. (1968). “<a href="https://ieeexplore.ieee.org/iel5/18/22639/01054142.pdf">Approximating Discrete Probability Distributions with Dependence Trees</a>.” IEEE Transactions on Information Theory. <a href="bib/1968/1968_chow.bib"><code>1968_chow.bib</code></a></li>
+<li>Shachter, Ross D.. (1998). “<a href="https://arxiv.org/pdf/1301.7412.pdf">Bayes-Ball: The Rational Pastime (for Determining Irrelevance and Requisite Information in Belief Networks and Influence Diagrams)</a>.” Proceedings of the Fourteenth Conference on Uncertainty in Artificial Intelligence (UAI). <a href="bib/1998/1998_shachter.bib"><code>1998_shachter.bib</code></a></li>
+<li>Chickering, David Maxwell. (1996). “<a href="http://people.cs.pitt.edu/~milos/courses/cs3710/readings/chickering96learning.pdf">Learning Bayesian Networks is NP-Complete</a>.” Learning from Data: Artificial Intelligence and Statistics V. <a href="bib/1996/1996_chickering.bib"><code>1996_chickering.bib</code></a></li>
+<li>Lerner, Uri N. (2002). “<a href="https://pdfs.semanticscholar.org/5609/16ef9bf3dffee6bd74192b5987870a66fad7.pdf">Hybrid Bayesian Networks for Reasoning about Complex Systems</a>.” Ph.D. Thesis. <a href="bib/2002/2002_lerner.bib"><code>2002_lerner.bib</code></a></li>
+</ul>
+<h2 id="resources">Resources</h2>
+<p><strong>Code</strong> (alphabetical)</p>
+<ul>
+<li><a href="http://www.bnlearn.com">bnlearn</a> - routines for learning and inference in <code>R</code>.</li>
+<li><a href="https://libra.cs.uoregon.edu">Libra Toolkit</a> - A collection of algorithms for learning and inference with discrete probabilistic models in <code>OCaml</code>.</li>
+<li><a href="https://pomegranate.readthedocs.io/en/latest/index.html">Pomegranate</a> - routines for learning and inference in <code>Python</code> (<a href="https://github.com/jmschrei/pomegranate">Repository</a>).</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<p><em>Topics not explicitly covered here, but related:</em></p>
+<ul>
+<li>Influence Diagrams</li>
+<li>Causal Models</li>
+<li><a href="https://github.com/arranger1044/awesome-spn">Sum-Product Networks / Arithmetic Circuits</a></li>
+</ul>
+<h2 id="license">License</h2>
+<p><strong>awesome-bayes-nets</strong> is released under a <a href="https://creativecommons.org/publicdomain/zero/1.0/"><code>CC0</code></a>: a <em>Creative Commons 1.0 Universal (CC0 1.0) Public Domain Dedication.</em></p>
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxMy4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDE0OTQ4KSAgLS0+DQo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9Ijg4cHgiIGhlaWdodD0iMzFweCIgdmlld0JveD0iLTAuNSAtMC4xMDEgODggMzEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgLTAuNSAtMC4xMDEgODggMzEiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEuODAzLDAuNDgyTDg0LjkzLDAuNjMxYzEuMTYxLDAsMi4xOTgtMC4xNzMsMi4xOTgsMi4zMzNMODcuMDI1LDMwLjUyaC04Ny4zMlYyLjg2Mg0KCQlDLTAuMjk1LDEuNjI2LTAuMTc3LDAuNDgyLDEuODAzLDAuNDgyeiIvPg0KCTxnPg0KCQk8ZWxsaXBzZSBmaWxsPSIjRkZGRkZGIiBjeD0iMTMuODg3IiBjeT0iMTUuNTAyIiByeD0iMTEuMTAxIiByeT0iMTEuMTc0Ii8+DQoJPC9nPg0KCTxwYXRoIGQ9Ik0yMy4yNzEsNC4wNjFjMy40ODQsMi41OTIsNS43NTQsNi43NDQsNS43NTUsMTEuNDRjLTAuMDAxLDQuMjcyLTEuODgsOC4wOTUtNC44NDIsMTAuNzA1aDYyLjg1M1Y0LjA2MUgyMy4yNzF6Ii8+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0zNS43MzksNy41NTljMC4zOTIsMCwwLjcyOCwwLjA1OSwxLjAwMiwwLjE3M2MwLjI3NiwwLjExNiwwLjUsMC4yNjgsMC42NzQsMC40NTYNCgkJCWMwLjE3MywwLjE4OSwwLjI5OSwwLjQwNSwwLjM3OSwwLjY0N2MwLjA3OSwwLjI0MiwwLjExOCwwLjQ5NCwwLjExOCwwLjc1M2MwLDAuMjUzLTAuMDM5LDAuNTAzLTAuMTE4LDAuNzQ5DQoJCQljLTAuMDgsMC4yNDQtMC4yMDYsMC40NjItMC4zNzksMC42NWMtMC4xNzQsMC4xODktMC4zOTcsMC4zNDEtMC42NzQsMC40NTZjLTAuMjc0LDAuMTE0LTAuNjEsMC4xNzMtMS4wMDIsMC4xNzNoLTEuNDUydjIuMjY3DQoJCQloLTEuMzgyVjcuNTU5SDM1LjczOXogTTM1LjM2LDEwLjUzNWMwLjE1OCwwLDAuMzEyLTAuMDEyLDAuNDU3LTAuMDM1YzAuMTQ3LTAuMDIzLDAuMjc2LTAuMDY5LDAuMzg4LTAuMTM3DQoJCQljMC4xMTItMC4wNjgsMC4yMDEtMC4xNjQsMC4yNjktMC4yODhzMC4xMDEtMC4yODcsMC4xMDEtMC40ODdjMC0wLjItMC4wMzMtMC4zNjItMC4xMDEtMC40ODcNCgkJCWMtMC4wNjctMC4xMjQtMC4xNTctMC4yMjEtMC4yNjktMC4yODdjLTAuMTExLTAuMDY4LTAuMjQtMC4xMTQtMC4zODgtMC4xMzhDMzUuNjcxLDguNjUyLDM1LjUxOCw4LjY0LDM1LjM2LDguNjRoLTEuMDczdjEuODk2DQoJCQlMMzUuMzYsMTAuNTM1TDM1LjM2LDEwLjUzNXoiLz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQzLjc1MSwxMy40Yy0wLjQ3NiwwLjQxNy0xLjEzMywwLjYyNS0xLjk3MiwwLjYyNWMtMC44NTEsMC0xLjUwOS0wLjIwNy0xLjk3Ni0wLjYyDQoJCQljLTAuNDY2LTAuNDEyLTAuNjk5LTEuMDUyLTAuNjk5LTEuOTEzVjcuNTU5aDEuMzgxdjMuOTM0YzAsMC4xNzEsMC4wMTYsMC4zMzgsMC4wNDUsMC41MDVjMC4wMjksMC4xNjUsMC4wOTEsMC4zMTEsMC4xODUsMC40MzkNCgkJCWMwLjA5NCwwLjEyNiwwLjIyNSwwLjIyOSwwLjM5MiwwLjMwOWMwLjE2NywwLjA4MSwwLjM5MiwwLjEyLDAuNjczLDAuMTJjMC40OTMsMCwwLjgzMy0wLjExLDEuMDIxLTAuMzMyDQoJCQljMC4xODgtMC4yMjIsMC4yODItMC41NjgsMC4yODItMS4wNFY3LjU1OWgxLjM4MnYzLjkzNEM0NC40NjQsMTIuMzQ4LDQ0LjIyNywxMi45ODMsNDMuNzUxLDEzLjR6Ii8+DQoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik00OS4wNyw3LjU1OWMwLjMsMCwwLjU3MiwwLjAyNywwLjgxOCwwLjA4MWMwLjI0NCwwLjA1NCwwLjQ1NywwLjE0LDAuNjMzLDAuMjYxDQoJCQljMC4xNzcsMC4xMjEsMC4zMTIsMC4yODIsMC40MSwwLjQ4MmMwLjA5NiwwLjIwMSwwLjE0NiwwLjQ1LDAuMTQ2LDAuNzQ1YzAsMC4zMTgtMC4wNzIsMC41ODQtMC4yMTYsMC43OTYNCgkJCWMtMC4xNDYsMC4yMTItMC4zNTcsMC4zODgtMC42MzksMC41MjNjMC4zODcsMC4xMTIsMC42NzYsMC4zMSwwLjg2NSwwLjU4OWMwLjE4OSwwLjI4MSwwLjI4NiwwLjYyLDAuMjg2LDEuMDE1DQoJCQljMCwwLjMxOS0wLjA2MiwwLjU5NS0wLjE4NywwLjgyOGMtMC4xMjMsMC4yMzItMC4yODksMC40MjMtMC40OTYsMC41NzFjLTAuMjA5LDAuMTQ4LTAuNDQ1LDAuMjU3LTAuNzEzLDAuMzI3DQoJCQljLTAuMjY5LDAuMDctMC41NDEsMC4xMDUtMC44MjIsMC4xMDVoLTMuMDQ3VjcuNTU5SDQ5LjA3eiBNNDguODk1LDEwLjExOWMwLjI0NiwwLDAuNDQ4LTAuMDU5LDAuNjA3LTAuMTc4DQoJCQljMC4xNTgtMC4xMTgsMC4yMzYtMC4zMDksMC4yMzYtMC41NzZjMC0wLjE0Ny0wLjAyNS0wLjI2OS0wLjA3OC0wLjM2M2MtMC4wNTMtMC4wOTMtMC4xMjMtMC4xNjgtMC4yMTEtMC4yMjENCgkJCWMtMC4wOS0wLjA1My0wLjE4OS0wLjA5MS0wLjMwNS0wLjEwOUM0OS4wMjksOC42NSw0OC45MTIsOC42NCw0OC43ODksOC42NGgtMS4yOTR2MS40OEw0OC44OTUsMTAuMTE5TDQ4Ljg5NSwxMC4xMTkNCgkJCUw0OC44OTUsMTAuMTE5eiBNNDguOTc1LDEyLjgwNGMwLjEzNSwwLDAuMjY0LTAuMDE0LDAuMzg3LTAuMDRjMC4xMjMtMC4wMjYsMC4yMy0wLjA3MiwwLjMyNi0wLjEzMw0KCQkJYzAuMDkyLTAuMDYyLDAuMTY4LTAuMTQ3LDAuMjI2LTAuMjU0YzAuMDU2LTAuMTA0LDAuMDgzLTAuMjQxLDAuMDgzLTAuNDA2YzAtMC4zMjQtMC4wOTItMC41NTctMC4yNzEtMC42OTUNCgkJCWMtMC4xODItMC4xMzgtMC40MjQtMC4yMDgtMC43MjMtMC4yMDhoLTEuNTA1djEuNzM4aDEuNDc5di0wLjAwMkg0OC45NzV6Ii8+DQoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik01NC4xNDMsNy41NTl2NS4xNTZoMy4wNjJ2MS4xNjhINTIuNzZWNy41NTlINTQuMTQzeiIvPg0KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNTkuNzQ4LDcuNTU5djYuMzI0aC0xLjM4MlY3LjU1OUg1OS43NDh6Ii8+DQoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik02NS40NTEsOS4yNDdjLTAuMDgyLTAuMTMyLTAuMTg2LTAuMjQ5LTAuMzA5LTAuMzQ5Yy0wLjEyMy0wLjEwMi0wLjI2My0wLjE4LTAuNDE4LTAuMjM2DQoJCQljLTAuMTU2LTAuMDU3LTAuMzE2LTAuMDg0LTAuNDg4LTAuMDg0Yy0wLjMxMiwwLTAuNTc0LDAuMDYyLTAuNzkzLDAuMTgzYy0wLjIxNywwLjEyLTAuMzk0LDAuMjgzLTAuNTI1LDAuNDg2DQoJCQljLTAuMTM2LDAuMjA0LTAuMjMyLDAuNDM2LTAuMjk2LDAuNjk1Yy0wLjA2MiwwLjI1OS0wLjA5MywwLjUyOC0wLjA5MywwLjgwNmMwLDAuMjY3LDAuMDMxLDAuNTI0LDAuMDkzLDAuNzc2DQoJCQljMC4wNjIsMC4yNTEsMC4xNiwwLjQ3NywwLjI5NiwwLjY3OGMwLjEzNCwwLjIwMSwwLjMxMiwwLjM2MSwwLjUyNSwwLjQ4M2MwLjIxOSwwLjEyLDAuNDgxLDAuMTgxLDAuNzkzLDAuMTgxDQoJCQljMC40MjQsMCwwLjc1Mi0wLjEzLDAuOTktMC4zODljMC4yMzYtMC4yNiwwLjM4My0wLjYwMiwwLjQzNy0xLjAyOEg2N2MtMC4wMzQsMC4zOTYtMC4xMjYsMC43NTMtMC4yNzEsMS4wNzINCgkJCWMtMC4xNDYsMC4zMTgtMC4zNDIsMC41OTEtMC41ODIsMC44MTVjLTAuMjM4LDAuMjI1LTAuNTIxLDAuMzk2LTAuODQ1LDAuNTEzYy0wLjMyMywwLjExOS0wLjY3OCwwLjE3OC0xLjA2NSwwLjE3OA0KCQkJYy0wLjQ3OSwwLTAuOTE0LTAuMDg0LTEuMjk3LTAuMjUyYy0wLjM4NS0wLjE2OS0wLjcwOS0wLjM5OC0wLjk3My0wLjY5NWMtMC4yNjUtMC4yOTUtMC40NjgtMC42NDItMC42MDctMS4wNA0KCQkJYy0wLjE0Mi0wLjM5OS0wLjIxMS0wLjgyOS0wLjIxMS0xLjI4OWMwLTAuNDczLDAuMDY5LTAuOTExLDAuMjExLTEuMzE2YzAuMTQxLTAuNDA0LDAuMzQ0LTAuNzU4LDAuNjA3LTEuMDU5DQoJCQljMC4yNjQtMC4zMDIsMC41ODgtMC41MzYsMC45NzMtMC43MDhjMC4zODQtMC4xNzIsMC44MTUtMC4yNTgsMS4yOTctMC4yNThjMC4zNDgsMCwwLjY3NiwwLjA1MSwwLjk4MSwwLjE1DQoJCQljMC4zMDgsMC4xMDIsMC41ODMsMC4yNDgsMC44MjcsMC40NGMwLjI0MywwLjE5MSwwLjQ0MywwLjQzLDAuNjA0LDAuNzEyYzAuMTU4LDAuMjgzLDAuMjU5LDAuNjA4LDAuMzAxLDAuOTc1aC0xLjM0DQoJCQlDNjUuNTg2LDkuNTI0LDY1LjUzMyw5LjM3Nyw2NS40NTEsOS4yNDd6Ii8+DQoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0zNS42MTUsMTYuNDE4YzAuNDA1LDAsMC43ODIsMC4wNjIsMS4xMzEsMC4xOTJjMC4zNSwwLjEzLDAuNjUxLDAuMzI0LDAuOTA2LDAuNTg1DQoJCQljMC4yNTUsMC4yNiwwLjQ1NSwwLjU4NiwwLjU5OSwwLjk3NWMwLjE0NCwwLjM5MSwwLjIxNiwwLjg0OSwwLjIxNiwxLjM3MWMwLDAuNDYzLTAuMDU5LDAuODg4LTAuMTc2LDEuMjc3DQoJCQljLTAuMTE4LDAuMzkxLTAuMjk1LDAuNzI3LTAuNTMyLDEuMDEyYy0wLjIzOCwwLjI4MS0wLjUzNCwwLjUwNC0wLjg5LDAuNjY4Yy0wLjM1NCwwLjE2LTAuNzcyLDAuMjQyLTEuMjU0LDAuMjQyaC0yLjcxdi02LjMyMg0KCQkJSDM1LjYxNXogTTM1LjUxOSwyMS41NzJjMC4xOTksMCwwLjM5My0wLjAzMSwwLjU4MS0wLjA5OGMwLjE4OC0wLjA2MiwwLjM1NC0wLjE3MywwLjUwMi0wLjMyMw0KCQkJYzAuMTQ2LTAuMTUxLDAuMjY0LTAuMzQ3LDAuMzUyLTAuNTljMC4wODgtMC4yNDEsMC4xMzItMC41MzYsMC4xMzItMC44ODZjMC0wLjMxNy0wLjAzMS0wLjYwNi0wLjA5My0wLjg2Mw0KCQkJYy0wLjA2Mi0wLjI1Ni0wLjE2Mi0wLjQ3OS0wLjMwNC0wLjY1OWMtMC4xNDEtMC4xODMtMC4zMjYtMC4zMjMtMC41NTktMC40MjFjLTAuMjMxLTAuMDk4LTAuNTE3LTAuMTQ2LTAuODU4LTAuMTQ2aC0wLjk4NHYzLjk4Ng0KCQkJSDM1LjUxOXoiLz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTM5LjgsMTguMjg5YzAuMTQxLTAuNDAzLDAuMzQ0LTAuNzU2LDAuNjA2LTEuMDU5YzAuMjY1LTAuMzAzLDAuNTg5LTAuNTM4LDAuOTczLTAuNzA5DQoJCQljMC4zODUtMC4xNzEsMC44MTYtMC4yNTcsMS4yOTgtMC4yNTdjMC40ODcsMCwwLjkyMSwwLjA4NiwxLjMwMywwLjI1N2MwLjM4MSwwLjE3MSwwLjcwNCwwLjQwNiwwLjk2OSwwLjcwOQ0KCQkJYzAuMjY0LDAuMzAzLDAuNDY2LDAuNjUyLDAuNjA1LDEuMDU5YzAuMTQzLDAuNDA0LDAuMjEzLDAuODQ1LDAuMjEzLDEuMzE2YzAsMC40Ni0wLjA3LDAuODkxLTAuMjEzLDEuMjg4DQoJCQljLTAuMTQyLDAuMzk3LTAuMzQ0LDAuNzQ0LTAuNjA1LDEuMDRjLTAuMjY2LDAuMjk1LTAuNTg4LDAuNTI1LTAuOTY5LDAuNjk1Yy0wLjM4MiwwLjE2Ni0wLjgxNSwwLjI1Mi0xLjMwMywwLjI1Mg0KCQkJYy0wLjQ4MSwwLTAuOTEzLTAuMDg2LTEuMjk4LTAuMjUyYy0wLjM4NC0wLjE3LTAuNzA4LTAuNC0wLjk3My0wLjY5NWMtMC4yNjMtMC4yOTYtMC40NjYtMC42NDUtMC42MDYtMS4wNA0KCQkJYy0wLjE0LTAuMzk3LTAuMjExLTAuODI4LTAuMjExLTEuMjg4QzM5LjU4OSwxOS4xMzQsMzkuNjU5LDE4LjY5NCwzOS44LDE4LjI4OXogTTQxLjA2MiwyMC4zNzkNCgkJCWMwLjA2MiwwLjI1MiwwLjE2LDAuNDc5LDAuMjk1LDAuNjhjMC4xMzUsMC4yLDAuMzEyLDAuMzU5LDAuNTI3LDAuNDgyYzAuMjE4LDAuMTIxLDAuNDgxLDAuMTgzLDAuNzkyLDAuMTgzDQoJCQljMC4zMTIsMCwwLjU3Ni0wLjA2MiwwLjc5Mi0wLjE4M2MwLjIxOC0wLjEyMSwwLjM5NC0wLjI4MSwwLjUyOS0wLjQ4MmMwLjEzNC0wLjIsMC4yMzEtMC40MjgsMC4yOTUtMC42OA0KCQkJYzAuMDYyLTAuMjUsMC4wOTItMC41MDgsMC4wOTItMC43NzRjMC0wLjI3Ni0wLjAzLTAuNTQ3LTAuMDkyLTAuODA2Yy0wLjA2Mi0wLjI2Mi0wLjE2MS0wLjQ5Mi0wLjI5NS0wLjY5Ng0KCQkJYy0wLjEzNi0wLjIwMS0wLjMxMi0wLjM2NS0wLjUyOS0wLjQ4NWMtMC4yMTYtMC4xMjEtMC40OC0wLjE4NC0wLjc5Mi0wLjE4NGMtMC4zMTEsMC0wLjU3NCwwLjA2Mi0wLjc5MiwwLjE4NA0KCQkJYy0wLjIxNiwwLjEyLTAuMzkzLDAuMjg0LTAuNTI3LDAuNDg1Yy0wLjEzNSwwLjIwNC0wLjIzMywwLjQzNy0wLjI5NSwwLjY5NmMtMC4wNjIsMC4yNTktMC4wOTMsMC41MjctMC4wOTMsMC44MDYNCgkJCUM0MC45NywxOS44NzEsNDEuMDAxLDIwLjEyOSw0MS4wNjIsMjAuMzc5eiIvPg0KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNDkuMDkyLDE2LjQxOGwxLjQ3MSw0LjM0OGgwLjAybDEuMzkzLTQuMzQ4aDEuOTQydjYuMzIyaC0xLjI5NHYtNC40OGgtMC4wMmwtMS41MzksNC40OEg1MGwtMS41NC00LjQzNw0KCQkJaC0wLjAxOXY0LjQzN2gtMS4yOTN2LTYuMzIySDQ5LjA5MnoiLz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTU4Ljc2NCwxNi40MThsMi4zNSw2LjMyMkg1OS42OGwtMC40NzYtMS40MDhoLTIuMzUxbC0wLjQ5MiwxLjQwOGgtMS4zOTFsMi4zNzctNi4zMjJINTguNzY0eg0KCQkJIE01OC44NDQsMjAuMjk3bC0wLjc5My0yLjMyMmgtMC4wMThsLTAuODE3LDIuMzIySDU4Ljg0NHoiLz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYzLjU0NywxNi40MTh2Ni4zMjJoLTEuMzgydi02LjMyMkg2My41NDd6Ii8+DQoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik02Ni42MDQsMTYuNDE4bDIuNjIzLDQuMjQyaDAuMDE4di00LjI0MmgxLjI5NHY2LjMyMmgtMS4zODRsLTIuNjExLTQuMjM0aC0wLjAydjQuMjM0SDY1LjIzdi02LjMyMg0KCQkJSDY2LjYwNHoiLz4NCgk8L2c+DQoJPHBhdGggZD0iTTg1Ljg1MiwwSDEuMTQ3QzAuMjM5LDAtMC41LDAuNzQ0LTAuNSwxLjY1OHYyOC45NjlDLTAuNSwzMC44MzQtMC4zMzMsMzEtMC4xMjgsMzFoODcuMjU2DQoJCWMwLjIwNSwwLDAuMzcyLTAuMTY2LDAuMzcyLTAuMzczVjEuNjU4Qzg3LjUsMC43NDQsODYuNzYyLDAsODUuODUyLDB6IE0xLjE0NywwLjc1aDg0LjcwNWMwLjQ5OCwwLDAuOTAyLDAuNDA2LDAuOTAyLDAuOTA4DQoJCWMwLDAsMCwyMC4xMjEsMCwyOC41NTdIMC4yNDV2LTguNDI2YzAtOC40MzUsMC0yMC4xMzEsMC0yMC4xMzFDMC4yNDUsMS4xNTcsMC42NSwwLjc1LDEuMTQ3LDAuNzV6Ii8+DQoJPGc+DQoJCTxlbGxpcHNlIGZpbGw9IiNGRkZGRkYiIGN4PSIxNC4xNTYiIGN5PSIxNS42NjEiIHJ4PSIxMS4wMDQiIHJ5PSIxMS4wNzYiLz4NCgkJPHBhdGggaWQ9InRleHQyODA5XzRfIiBkPSJNMTQuMjIsOC43NDZjLTMuODYyLDAtNC44MzQsMy42NjktNC44MzQsNi43NzljMCwzLjExMSwwLjk3MSw2Ljc3OSw0LjgzNCw2Ljc3OQ0KCQkJYzMuODYzLDAsNC44MzQtMy42Nyw0LjgzNC02Ljc3OUMxOS4wNTQsMTIuNDE0LDE4LjA4Myw4Ljc0NiwxNC4yMiw4Ljc0NnogTTE0LjIyLDExLjMwMWMwLjE1NywwLDAuMywwLjAyNCwwLjQzNSwwLjA2DQoJCQljMC4yNzgsMC4yNCwwLjQxNCwwLjU3MywwLjE0NywxLjAzOGwtMi41NzIsNC43NmMtMC4wNzktMC42MDMtMC4wOTEtMS4xOTUtMC4wOTEtMS42MzRDMTIuMTM5LDE0LjE1NSwxMi4yMzMsMTEuMzAxLDE0LjIyLDExLjMwMQ0KCQkJeiBNMTYuMTQ2LDEzLjQ5NGMwLjEzNywwLjczMSwwLjE1NSwxLjQ5MywwLjE1NSwyLjAzYzAsMS4zNy0wLjA5NCw0LjIyMy0yLjA4LDQuMjIzYy0wLjE1NiwwLTAuMzAxLTAuMDE3LTAuNDM1LTAuMDQ5DQoJCQljLTAuMDI1LTAuMDEtMC4wNDktMC4wMTktMC4wNzQtMC4wMjVjLTAuMDQtMC4wMTItMC4wODQtMC4wMjQtMC4xMjItMC4wNDFjLTAuNDQyLTAuMTg4LTAuNzIxLTAuNTMxLTAuMzE5LTEuMTM5TDE2LjE0NiwxMy40OTR6Ig0KCQkJLz4NCgkJPHBhdGggaWQ9InBhdGgyODE1XzRfIiBkPSJNMTQuMTk1LDMuNzQ4Yy0zLjI0NSwwLTUuOTgsMS4xMzctOC4yMSwzLjQyMmMtMS4xMjgsMS4xMzUtMS45OSwyLjQzMS0yLjU4OSwzLjg3Ng0KCQkJYy0wLjU4NSwxLjQzLTAuODc2LDIuOTIxLTAuODc2LDQuNDc4YzAsMS41NywwLjI5MSwzLjA2MiwwLjg3Niw0LjQ3OXMxLjQzNCwyLjY5LDIuNTQ4LDMuODI2DQoJCQljMS4xMjgsMS4xMjEsMi4zOTUsMS45ODUsMy44MDIsMi41ODhjMS40MjEsMC41OSwyLjkwMywwLjg4NCw0LjQ0OSwwLjg4NGMxLjU0NywwLDMuMDUtMC4zMDQsNC40OTktMC45MDcNCgkJCWMxLjQ0OC0wLjYwNCwyLjc0LTEuNDcxLDMuODgzLTIuNjA1YzEuMTAxLTEuMDc4LDEuOTM0LTIuMzE3LDIuNDktMy43MTljMC41NzEtMS40MTUsMC44NTMtMi45MzIsMC44NTMtNC41NDQNCgkJCWMwLTEuNTk4LTAuMjgxLTMuMTEyLTAuODUyLTQuNTI4Yy0wLjU3MS0xLjQyOS0xLjQwNy0yLjY5My0yLjUwNy0zLjgwMUMyMC4yNjMsNC44OTUsMTcuNDY5LDMuNzQ4LDE0LjE5NSwzLjc0OHogTTE0LjI0NCw1Ljg2Nw0KCQkJYzIuNjQ2LDAsNC45MDQsMC45NDQsNi43ODQsMi44MzZjMC45MDYsMC45MTIsMS42LDEuOTU0LDIuMDczLDMuMTE5YzAuNDczLDEuMTY0LDAuNzEzLDIuMzk4LDAuNzEzLDMuNzAzDQoJCQljMCwyLjcwNy0wLjkyLDQuOTUyLTIuNzQ0LDYuNzQ2Yy0wLjk0OCwwLjkyNy0yLjAxMiwxLjYzOC0zLjE5NiwyLjEyOGMtMS4xNywwLjQ4OS0yLjM3NSwwLjczMi0zLjYzLDAuNzMyDQoJCQljLTEuMjY4LDAtMi40ODEtMC4yMzktMy42MzgtMC43MTdjLTEuMTU2LTAuNDg5LTIuMTkzLTEuMTkxLTMuMTEzLTIuMTA0Yy0wLjkyLTAuOTI1LTEuNjI5LTEuOTctMi4xMy0zLjEzNQ0KCQkJYy0wLjQ4Ny0xLjE3OC0wLjczOC0yLjM5MS0wLjczOC0zLjY1M2MwLTEuMjc2LDAuMjUxLTIuNDk3LDAuNzM4LTMuNjYyYzAuNTAxLTEuMTc4LDEuMjExLTIuMjM1LDIuMTMtMy4xNzUNCgkJCUM5LjMxNyw2LjgwOSwxMS41Nyw1Ljg2NywxNC4yNDQsNS44Njd6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=" alt="CC0" /></a></p>
+</body>
+</html>

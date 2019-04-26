@@ -27,8 +27,11 @@ Contributions are appreciated, but please read the
 for issues and pull requests.
 
 [Alexander L. Hayes](https://hayesall.com/) currently maintains this list.
-He is notified when new issues or pull requests are submitted, but may not
-always respond immediately. He can also be reached at [`hayesall@iu.edu`](mailto:hayesall@iu.edu).
+He is notified when new
+[issues](https://github.com/batflyer/awesome-bayes-nets/issues) or
+[pull requests](https://github.com/batflyer/awesome-bayes-nets/pulls) are
+submitted, but may not always respond immediately. He can also be reached at
+[`hayesall@iu.edu`](mailto:hayesall@iu.edu).
 
 ---
 
