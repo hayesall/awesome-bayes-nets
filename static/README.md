@@ -56,6 +56,14 @@ submitted, but may not always respond immediately. He can also be reached at
 
 ## Resources
 
+**Blog Posts and Short Overviews**
+
+- ["A Brief Introduction to Graphical Models and Bayesian Networks," Kevin Murphy](https://www.cs.ubc.ca/~murphyk/Bayes/bnintro.html)
+- ["Directed Graphical Models," Nicholas Ruozzi](https://personal.utdallas.edu/~nrr150130/gmbook/bayes.html)
+- ["Bayesian networks," Stefano Ermon](https://ermongroup.github.io/cs228-notes/representation/directed/)
+- ["Introduction to Bayesian Networks," Devin Soni - *Towards Data Science*](https://towardsdatascience.com/introduction-to-bayesian-networks-81031eeed94e)
+- ["A Gentle Introduction to Bayesian Belief Networks," Jason Brownlee - *Machine Learning Mastery*](https://machinelearningmastery.com/introduction-to-bayesian-belief-networks/)
+
 **Code** (alphabetical)
 
 - [bnlearn](http://www.bnlearn.com) - routines for learning and inference in `R`.
