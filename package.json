@@ -24,6 +24,6 @@
     "node": "11.14.0"
   },
   "dependencies": {
-    "awesome-lint": "^0.9.1"
+    "awesome-lint": "^0.16.0"
   }
 }
