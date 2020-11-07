@@ -45,7 +45,10 @@ class Reference:
         self.author = db["author"]
         self.title = db["title"]
         self.year = int(db["year"])
-        self.journal = db["journal"]
+        try:
+            self.journal = db["journal"]
+        except KeyError:
+            self.journal = db["booktitle"]
 
         # A "url" is not strictly required.
         if db.get("url"):
