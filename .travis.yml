@@ -1,15 +1,15 @@
-sudo: false
 language: python
 
 matrix:
   include:
-    - name: "Python 3.7 (Xenial Linux)"
+    - name: "Python 3.9 (Xenial Linux)"
       language: python
       dist: xenial
-      python: 3.7
+      python: 3.9
+      before_install:
+        - python -m pip install --upgrade pip
       install:
-        - pip install --upgrade pip
-        - pip install -r src/requirements-develop.txt
+        - python -m pip install -r src/requirements-develop.txt
       script: make test
 
 after_success:
