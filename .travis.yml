@@ -9,7 +9,7 @@ matrix:
       before_install:
         - python -m pip install --upgrade pip
       install:
-        - pip install -r src/requirements-develop.txt
+        - python -m pip install -r src/requirements-develop.txt
       script: make test
 
 after_success:
