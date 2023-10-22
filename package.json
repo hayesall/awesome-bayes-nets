@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/batflyer/awesome-bayes-nets#readme",
   "dependencies": {
-    "awesome-lint": "^0.18.0"
+    "awesome-lint": "^1.0.0"
   }
 }
